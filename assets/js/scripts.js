@@ -80,10 +80,10 @@
                       <div class="box__marcas">
                           <div class="container-fluid">
                               <div class="row">
-                                  <div class="marca col-3">
+                                  <div class="marca col col-sm-3">
                                       <span class="${key}"><i></i>${key.charAt(0).toUpperCase()}${key.substring(1)}</span>
                                   </div>
-                                  <div class="marcas col-9">
+                                  <div class="marcas col col-sm-9">
                                       <ul>
                                         ${brands(object[key])}
                                       </ul>
