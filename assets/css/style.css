@@ -249,6 +249,10 @@
     font-weight: 700;
 }
 
+.universo_saraiva .listas .slider{
+    padding: 0px 55px;
+}
+
 .universo_saraiva .listas h3 {
     width: 100%;
     font-family: 'Work Sans', sans-serif;
@@ -305,12 +309,6 @@
     flex-direction: column-reverse;
 }
 
-.universo_saraiva .listas .slick-arrow{
-    transform: translateY(-50%) translateX(-60px);
-}
-.universo_saraiva .listas .slick-arrow.slick-next{
-    transform: translateY(-50%) translateX(-60px) rotate(180deg);
-}
 
 .universo_saraiva .links {
     column-count: 1;
