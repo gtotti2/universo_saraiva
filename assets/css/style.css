@@ -382,7 +382,7 @@
 
 @media only screen and (min-width: 576px) {
     .universo_saraiva .marcas .box__marcas .marcas ul {
-        column-count: 4;
+        column-count: 3;
     }
 }
 
