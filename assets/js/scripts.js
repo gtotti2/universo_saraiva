@@ -24,7 +24,7 @@
         var lastSection = $('section').last()
         for (const section in sections) {
             estruturaFlex(section, sections[section].config.tipo)
-            
+
             function estruturaFlex(key, tipo) {
 
                 var sectionClass = tipo == key ? key : `${tipo} ${key}`
@@ -32,7 +32,25 @@
                 let marcas = `<section nav-link="${sectionClass}" class="${sectionClass}" style="order:${sections[section].config.position};"><div class="container-fluid"><h2>${sections[section].config.nome}</h2><div class="row links"></div></div></section>`
                 let botoes = `<section nav-link="${sectionClass}" class="${sectionClass}" style="order:${sections[section].config.position};"><div class="container"><h2>${sections[section].config.nome}</h2><div class="row"><div class="links"></div></div></div></section>`
                 let listas = `<section nav-link="${sectionClass}" class="${sectionClass}" style="order:${sections[section].config.position};"><div class="container"><h2>${sections[section].config.nome}</h2><div class="row"><div class="col"><div class="slider" data-options='{"variableWidth":true,"slidesToScroll": 4,"infinite": true}'></div></div></div></div></section>`
-                let topo = ``
+                let topo = `<section class="${sectionClass}" nav-link="${sectionClass}" style="order:${sections[section].config.position};">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="content">
+                                <img class="img-fluid" src="${sections[section].config.logo}"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="content">
+                                <h2>${sections[section].config.nome}</h2>
+                                <div class="row sliders"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>`
+
 
                 if (tipo == "listas") {
                     $(listas).insertAfter(lastSection)
@@ -42,6 +60,9 @@
                 } else if (tipo == "botoes") {
                     $(botoes).insertAfter(lastSection)
                     loadLinks(sections, key)
+                } else if (tipo == "topo") {
+                    $(topo).insertAfter(lastSection)
+                    loadSliders(sections, key)
                 }
             }
         }
@@ -53,9 +74,42 @@
         }
     }
 
+    var loadSliders = (data, key) => {
+        itemsProcessed = 0;
+        data[key].sliders.forEach((element, index) => {
+            itemsProcessed++
+            var slide = (data) => {
+                var slideHtml = "";
+                data.slides.forEach(slide => {
+                    slideHtml += `
+                    <div class="slide">
+                        <a href="${slide.href}">
+                            <div class="slide__content">
+                                <img class="img-fluid" src="${slide.img}"
+                                alt="star_wars">
+                                <p>${slide.titulo}</p>
+                            </div>
+                        </a>
+                    </div>`
+                });
+                return slideHtml
+            }
+            var slider = `
+            <div class="col col-lg-6">
+                <div class="slider" data-options="{}" data-category="${data[key].sliders[index].category}">
+                    ${slide(element)}
+                </div>
+            </div>`
+            $(`${slider}`).appendTo(`.${data[key].config.tipo} .row.sliders`)
+
+        });
+        if (itemsProcessed === data[key].sliders.length) {
+            loadSlicks($(`.${data[key].config.tipo} .row.sliders .slider`))
+        }
+    }
+
 
     var loadLinks = (data, key) => {
-        console.log(data)
         data[key].links.forEach(element => {
             $(`<div class="link"><a href="${element.href}">${element.nome}</a></div>`).appendTo(`.${key} .links`)
         });
@@ -134,7 +188,7 @@
     }
 
     requestData()
-    loadSlicks($('.topo .slider'))
+
 
 
 })();

@@ -1617,6 +1617,157 @@
                 "x": [],
                 "z": []
             }
+        },
+        "topo": {
+            "config": {
+                "color": "white",
+                "tipo": "topo",
+                "position": "0",
+                "nome": "Veja nossos destaques por assuntos de interesse",
+                "logo": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/logo_universo.png"
+            },
+            "sliders": [
+                {
+                    "category": "Geek",
+                    "slides": [
+                        {
+                            "href": "https://www.saraiva.com.br/star-wars",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/star_wars.jpg",
+                            "titulo": "Star Wars"
+                        },
+                        {
+                            "href": "https://www.saraiva.com.br/game-of-thrones",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/got.jpg",
+                            "titulo": "GOT"
+                        },
+                        {
+                            "href": "https://www.saraiva.com.br/listas-livros/marvel-books",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/marvel-books.jpg",
+                            "titulo": "Marvel Books"
+                        },
+                        {
+                            "href": "http://www.saraiva.com.br/marvel",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/marvel.jpg",
+                            "titulo": "Marvel"
+                        },
+                        {
+                            "href": "http://www.saraiva.com.br/universo-geek",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/universo-geek.jpg",
+                            "titulo": "Geek"
+                        },
+                        {
+                            "href": "http://www.saraiva.com.br/beco-diagonal",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/hp.jpg",
+                            "titulo": "Beco Diagonal"
+                        },
+                        {
+                            "href": "https://www.saraiva.com.br/autor/neil-gaiman",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/neil.jpg",
+                            "titulo": "Neil Gailman"
+                        },
+                        {
+                            "href": "http://www.saraiva.com.br/livros/hqs",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/hqs-mangas.jpg",
+                            "titulo": "HQs"
+                        }
+                    ]
+                },
+                {
+                    "category": "Infantil",
+                    "slides": [
+                        {
+                            "href": "http://www.saraiva.com.br/disney-princesa",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/princesas.jpg",
+                            "titulo": "Princesas"
+                        },
+                        {
+                            "href": "http://www.saraiva.com.br/kids",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/kids.jpg",
+                            "titulo": "Saraiva Kids"
+                        },
+                        {
+                            "href": "https://www.saraiva.com.br/marcas/faber-castell",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/faber.jpg",
+                            "titulo": "Faber Castell"
+                        },
+                        {
+                            "href": "https://www.saraiva.com.br/personagens/barbie/papelaria",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/barbie.jpg",
+                            "titulo": "Barbie"
+                        },
+                        {
+                            "href": "https://www.saraiva.com.br/livros/editoras/cia-das-letrinhas",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/cia-das-letrinhas.jpg",
+                            "titulo": "Cia das Letrinhas"
+                        },
+                        {
+                            "href": "https://www.saraiva.com.br/mickey-mouse",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/mickey.jpg",
+                            "titulo": "Mickey Mouse"
+                        }
+                    ]
+                },
+                {
+                    "category": "Carreiras",
+                    "slides": [
+                        {
+                            "href": "#",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/adm.jpg",
+                            "titulo": "Administração"
+                        },
+                        {
+                            "href": "#",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/medicina.jpg",
+                            "titulo": "Medicina"
+                        },
+                        {
+                            "href": "#",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/direito.jpg",
+                            "titulo": "Direito"
+                        },
+                        {
+                            "href": "#",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/concursos.jpg",
+                            "titulo": "Lista Enem"
+                        },
+                        {
+                            "href": "#",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/concursos.jpg",
+                            "titulo": "Lista Vestibular"
+                        }
+                    ]
+                },
+                {
+                    "category": "Lazer e Diversão",
+                    "slides": [
+                        {
+                            "href": "https://www.saraiva.com.br/mundo-gopro",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/gopro.jpg",
+                            "titulo": "Go Pro"
+                        },
+                        {
+                            "href": "https://www.saraiva.com.br/apple",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/apple.jpg",
+                            "titulo": "Apple"
+                        },
+                        {
+                            "href": "https://www.saraiva.com.br/lego",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/lego.jpg",
+                            "titulo": "Lego"
+                        },
+                        {
+                            "href": "https://www.saraiva.com.br/audio/fitness-esporte",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/audio-e-fones.jpg",
+                            "titulo": "Áudio e Fones"
+                        },
+                        {
+                            "href": "https://www.saraiva.com.br/impressao",
+                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/impressao.jpg",
+                            "titulo": "Impressão"
+                        }
+                    ]
+                }
+            ]
         }
     }
 }
