@@ -1,0 +1,21 @@
+{
+  "name": "universo_saraiva",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-clean-css": "^3.10.0",
+    "masonry-layout": "^4.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://saraiva_ux@bitbucket.org/saraiva_ux/universo_saraiva.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/saraiva_ux/universo_saraiva#readme"
+}

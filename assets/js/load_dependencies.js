@@ -1,9 +1,7 @@
 function load_dependencies(params) {
 
     $ = jQuery
-
     var string = document.URL.split('/')
-
 
     var listOfDependencies = params
     
@@ -12,8 +10,9 @@ function load_dependencies(params) {
 
 
     for (dependencies in listOfDependencies) {
+        console.log(string[2].indexOf('localhost:8080') !== -1)
         
-        if (string[2] == "localhost:8080") {
+        if (string[2].indexOf('localhost:8080') !== -1) {
             var elementFiltered = listOfDependencies[dependencies].split(listOfDependencies.path_s3)
             elementFiltered.length > 1 ? elementFiltered = `./${elementFiltered[1]}` : elementFiltered = elementFiltered[0]
             addParameterToEachDependencies(elementFiltered.split('.'))

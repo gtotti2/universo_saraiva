@@ -12,12 +12,21 @@
         }).done(function (data) {
             buildSections(data.section)
             defineSectionsConfigs(data)
-            listasSlides(data)
         })
     }
     var loadSlicks = (slider) => {
         var options = $(slider).data('options')
         $(slider).slick(options)
+    }
+
+    var loadMasonry = (slider) => {
+        $(slider).masonry({
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            horizontalOrder: true,
+            percentPosition: true
+        });
     }
 
     var buildSections = (sections) => {
@@ -33,27 +42,13 @@
                 let botoes = `<section nav-link="${sectionClass}" class="${sectionClass}" style="order:${sections[section].config.position};"><div class="container"><h2>${sections[section].config.nome}</h2><div class="row"><div class="links"></div></div></div></section>`
                 let listas = `<section nav-link="${sectionClass}" class="${sectionClass}" style="order:${sections[section].config.position};"><div class="container"><h2>${sections[section].config.nome}</h2><div class="row"><div class="col"><div class="slider" data-options='{"variableWidth":true,"slidesToScroll": 4,"infinite": true}'></div></div></div></div></section>`
                 let topo = `<section class="${sectionClass}" nav-link="${sectionClass}" style="order:${sections[section].config.position};">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <div class="content">
-                                <img class="img-fluid" src="${sections[section].config.logo}"
-                                    alt="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-8">
-                            <div class="content">
-                                <h2>${sections[section].config.nome}</h2>
-                                <div class="row sliders"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>`
+                <div class="container-fluid"><div class="row"><div class="col-12 col-md-4"><div class="content"><img class="img-fluid" src="${sections[section].config.logo}"alt=""></div></div><div class="col-12 col-md-8"><div class="content"><h2>${sections[section].config.nome}</h2><div class="row sliders"></div></div></div></div></div></section>`
+                let masonry = `<section nav-link="${sectionClass}" class="${sectionClass}" style="order:${sections[section].config.position};"><div class="container"><h2>${sections[section].config.nome}</h2><div class="row"><div class="col"><div class="grid"><div class="grid-sizer"></div><div class="gutter-sizer"></div></div></div></div></div></section>`
 
 
                 if (tipo == "listas") {
                     $(listas).insertAfter(lastSection)
+                    loadListas(sections, key)
                 } else if (tipo == "marcas") {
                     $(marcas).insertAfter(lastSection)
                     loadBrands(sections, key)
@@ -63,6 +58,9 @@
                 } else if (tipo == "topo") {
                     $(topo).insertAfter(lastSection)
                     loadSliders(sections, key)
+                } else if (tipo == "masonry") {
+                    $(masonry).insertAfter(lastSection)
+                    loadGrids(sections, key)
                 }
             }
         }
@@ -71,6 +69,40 @@
     var defineSectionsConfigs = (data) => {
         for (const i in data.section) {
             $(`section.${i}`).addClass(data.section[i].config.color)
+        }
+    }
+
+    var loadSliders = (data, key) => {
+        itemsProcessed = 0;
+        data[key].sliders.forEach((element, index) => {
+            itemsProcessed++
+            var slide = (data) => {
+                var slideHtml = "";
+                data.slides.forEach(slide => {
+                    slideHtml += `
+                    <div class="slide">
+                        <a href="${slide.href}">
+                            <div class="slide__content">
+                                <img class="img-fluid" src="${slide.img}"
+                                alt="star_wars">
+                                <p>${slide.titulo}</p>
+                            </div>
+                        </a>
+                    </div>`
+                });
+                return slideHtml
+            }
+            var slider = `
+            <div class="col col-lg-6">
+                <div class="slider" data-options="{}" data-category="${data[key].sliders[index].category}">
+                    ${slide(element)}
+                </div>
+            </div>`
+            $(`${slider}`).appendTo(`.${data[key].config.tipo} .row.sliders`)
+
+        });
+        if (itemsProcessed === data[key].sliders.length) {
+            loadSlicks($(`.${data[key].config.tipo} .row.sliders .slider`))
         }
     }
 
@@ -134,10 +166,10 @@
                       <div class="box__marcas">
                           <div class="container-fluid">
                               <div class="row">
-                                  <div class="marca col col-sm-3">
+                                  <div class="marca col col-md-3">
                                       <span class="${key}"><i></i>${key.charAt(0).toUpperCase()}${key.substring(1)}</span>
                                   </div>
-                                  <div class="marcas col col-sm-9">
+                                  <div class="marcas col col-md-9">
                                       <ul>
                                         ${brands(object[key])}
                                       </ul>
@@ -152,39 +184,53 @@
     }
 
 
-    var listasSlides = (data) => {
-        var listOfKeys = []
-        for (const key in data.section) {
-            if (data.section.hasOwnProperty(key)) {
-                const element = data.section[key];
-                if (element.config.isSlider) {
-                    listOfKeys.push(key)
+
+    var loadListas = (data, chave) => {
+
+        var lista = (array) => {
+            var retorno = ``
+            array.forEach(element => {
+                retorno += `<li><a href="${element.href}">${element.nome}</a></li>`
+            });
+            return retorno
+        }
+        for (const key in data[chave].letras) {
+            if (data[chave].letras.hasOwnProperty(key)) {
+                const element = data[chave].letras[key]
+                var estrutura = `<div class="slide"><div class="${key} lista"><ul>${lista(data[chave].letras[key])}</ul><h3>${key}</h3></div></div>`
+                if (data[chave].letras[key].length) {
+                    $(`.${chave} .slider`).append(estrutura)
                 }
             }
         }
-        loadListas(listOfKeys, data)
+        loadSlicks($(`.${chave} .slider`))
     }
 
+    var loadGrids = (data, chave) => {
 
-    var loadListas = (chave, data) => {
-        var itemsProcessed = 0;
-        chave.forEach((element, index, array) => {
-            itemsProcessed++;
-            for (const key in data.section[element].letras) {
-                var lista = (array) => {
-                    var retorno = ``
-                    array.forEach(element => {
-                        retorno += `<li><a href="${element.href}">${element.nome}</a></li>`
-                    });
-                    return retorno
-                }
-                var estrutura = `<div class="slide"><div class="${key} lista"><ul>${lista(data.section[element].letras[key])}</ul><h3>${key}</h3></div></div>`
-                $(`.${element} .slider`).append(estrutura)
-            }
-            if (itemsProcessed === array.length) {
-                loadSlicks($(`.${data.section.editoras.config.tipo} .slider`))
-            }
-        });
+        var lista = (array) => {
+            var retorno = ``
+            array.forEach(element => {
+                retorno += `<li><a href="${element.href}">${element.nome}</a></li>`
+            });
+            return retorno
+        }
+
+        var letrasProcessadas = 0;
+        var letrasLength = Object.keys(data[chave].letras).length
+        for (const key in data[chave].letras) {
+            letrasProcessadas++;
+            var estrutura = `<div class="grid-item"><div class="${key} lista"><ul>${lista(data[chave].letras[key])}</ul><h3>${key}</h3></div></div>`
+
+            //if (data[chave].letras[key].length) {
+            $(`.${chave} .grid`).append(estrutura)
+            //}
+
+        }
+        if (letrasProcessadas == letrasLength) {
+            loadMasonry($(`.${chave} .grid`))
+        }
+
     }
 
     requestData()

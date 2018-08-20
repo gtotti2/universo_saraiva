@@ -190,7 +190,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .universo_saraiva .marcas .box__marcas .marca span {
@@ -224,10 +223,20 @@
     background: url(../img/icon_papelaria.png) no-repeat center scroll;
 }
 
+.universo_saraiva .marcas .box__marcas .marcas {
+    margin: 40px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+}
+
 .universo_saraiva .marcas .box__marcas .marcas ul {
     padding: 0;
+    margin: 0;
     column-count: 2;
     list-style-type: disc;
+    min-width: 100%;
 }
 
 .universo_saraiva .marcas .box__marcas .marcas ul>li {
@@ -249,7 +258,7 @@
     font-weight: 700;
 }
 
-.universo_saraiva .listas .slider{
+.universo_saraiva .listas .slider {
     padding: 0px 55px;
 }
 
@@ -308,7 +317,6 @@
     display: flex;
     flex-direction: column-reverse;
 }
-
 
 .universo_saraiva .links {
     column-count: 1;
@@ -385,14 +393,95 @@
     font-weight: inherit;
 }
 
+
+/* MASONRY */
+.universo_saraiva .grid-item {
+    margin-bottom: 3%;
+}
+
+.universo_saraiva .grid-sizer,.universo_saraiva .grid-item {
+    width: 98%;
+}
+.universo_saraiva .gutter-sizer{
+    width: 2%;
+}
+
+.universo_saraiva .grid-item h3 {
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    color: #121212;
+    font-weight: 600;
+    font-size: 1.75em;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.universo_saraiva .grid-item ul {
+    padding: 23px 25px;
+    margin-top: 6px;
+}
+
+.universo_saraiva .grid-item ul:not(:empty) {
+    border-top: 5px solid #ffdd00;
+}
+
+.universo_saraiva .grid-item ul:empty {
+    /* width: 35px; */
+    border-top: 5px solid rgba(0, 0, 0, .1);
+}
+
+.universo_saraiva .grid-item ul:empty+h3 {
+    color: rgba(0, 0, 0, .6);
+}
+
+.universo_saraiva .grid-item ul>li {
+    font-family: 'Work Sans', sans-serif;
+    color: #292929;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 1.556;
+    text-align: left;
+    list-style: disc;
+}
+
+.universo_saraiva .grid-item ul>li>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.universo_saraiva .grid-item ul>li>a:hover {
+    font-weight: 700;
+}
+
+.universo_saraiva .grid-item .lista {
+    margin: 0px 0px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+
 @media only screen and (min-width: 576px) {
     .universo_saraiva .marcas .box__marcas .marcas ul {
         column-count: 3;
+    }
+    .universo_saraiva .grid-sizer,.universo_saraiva .grid-item {
+        width: 45%;
+    }
+    .universo_saraiva .gutter-sizer{
+        width: 5%;
     }
 }
 
 @media only screen and (min-width: 767px) {
     .universo_saraiva .links {
         column-count: 4;
+    }
+    .universo_saraiva .grid-sizer,.universo_saraiva .grid-item {
+        width: 28%;
+    }
+    .universo_saraiva .gutter-sizer{
+        width: 5%;
     }
 }
