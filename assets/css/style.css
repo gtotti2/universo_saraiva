@@ -373,6 +373,7 @@
     border-radius: 45px;
     color: #636363;
     margin: 26px auto;
+    display: block;
 }
 
 .universo_saraiva .load-more:hover {
@@ -395,6 +396,9 @@
 
 
 /* MASONRY */
+.universo_saraiva .grid{
+    overflow: hidden;
+}
 .universo_saraiva .grid-item {
     margin-bottom: 3%;
 }

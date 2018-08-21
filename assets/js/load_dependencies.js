@@ -10,7 +10,6 @@ function load_dependencies(params) {
 
 
     for (dependencies in listOfDependencies) {
-        console.log(string[2].indexOf('localhost:8080') !== -1)
         
         if (string[2].indexOf('localhost:8080') !== -1) {
             var elementFiltered = listOfDependencies[dependencies].split(listOfDependencies.path_s3)

@@ -20,13 +20,40 @@
     }
 
     var loadMasonry = (slider) => {
-        $(slider).masonry({
+        var options = {
             itemSelector: '.grid-item',
             columnWidth: '.grid-sizer',
             gutter: '.gutter-sizer',
-            horizontalOrder: true,
             percentPosition: true
-        });
+        }
+        var $grid = new Masonry('.grid', options)
+        if ($grid._isLayoutInited) {
+            $($grid.element).css('max-height', '150px')
+        }
+        $('.grid + a').click(function (e) {
+            e.preventDefault()
+            $this = $(this)
+
+            var animateWindow = () => {
+                $("html, body").animate({ scrollTop: $this.prev('.grid').offset().top - 150 }, 500)
+            }
+
+            if (!$this.hasClass('see_more')) {
+                $this.text('VER MENOS').addClass('see_more').prev('.grid').animate({
+                    maxHeight: $this.prev('.grid')[0].scrollHeight
+                }, 1500, function () {
+                    animateWindow()
+                });
+            } else {
+                $this.text('VER MAIS').removeClass('see_more').prev('.grid').animate({
+                    maxHeight: '150px'
+                }, 1500, function () {
+                    animateWindow()
+                })
+            }
+
+        })
+
     }
 
     var buildSections = (sections) => {
@@ -43,7 +70,7 @@
                 let listas = `<section nav-link="${sectionClass}" class="${sectionClass}" style="order:${sections[section].config.position};"><div class="container"><h2>${sections[section].config.nome}</h2><div class="row"><div class="col"><div class="slider" data-options='{"variableWidth":true,"slidesToScroll": 4,"infinite": true}'></div></div></div></div></section>`
                 let topo = `<section class="${sectionClass}" nav-link="${sectionClass}" style="order:${sections[section].config.position};">
                 <div class="container-fluid"><div class="row"><div class="col-12 col-md-4"><div class="content"><img class="img-fluid" src="${sections[section].config.logo}"alt=""></div></div><div class="col-12 col-md-8"><div class="content"><h2>${sections[section].config.nome}</h2><div class="row sliders"></div></div></div></div></div></section>`
-                let masonry = `<section nav-link="${sectionClass}" class="${sectionClass}" style="order:${sections[section].config.position};"><div class="container"><h2>${sections[section].config.nome}</h2><div class="row"><div class="col"><div class="grid"><div class="grid-sizer"></div><div class="gutter-sizer"></div></div></div></div></div></section>`
+                let masonry = `<section nav-link="${sectionClass}" class="${sectionClass}" style="order:${sections[section].config.position};"><div class="container"><h2>${sections[section].config.nome}</h2><div class="row"><div class="col"><div class="grid"><div class="grid-sizer"></div><div class="gutter-sizer"></div></div><a class="load-more" href="#">VER MAIS</a></div></div></div></section>`
 
 
                 if (tipo == "listas") {
@@ -228,7 +255,7 @@
 
         }
         if (letrasProcessadas == letrasLength) {
-            loadMasonry($(`.${chave} .grid`))
+            loadMasonry(document.querySelectorAll(`.${chave} .grid`))
         }
 
     }
