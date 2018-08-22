@@ -181,10 +181,11 @@
     border-width: 1px;
     border-color: #dcdcdc;
     border-style: solid;
-    padding: 43.5px 0px;
-    margin: 14px auto;
+    min-height: 100%;
 }
-
+.universo_saraiva .marcas .brands > div{
+    margin-bottom: 20px;
+}
 .universo_saraiva .marcas .box__marcas .marca {
     display: flex;
     flex-direction: row;
@@ -203,7 +204,7 @@
     color: #121212;
     font-size: 1.25em;
     font-weight: 600;
-    margin-top: -22px;
+    margin-top: 22px;
 }
 
 .universo_saraiva .marcas .box__marcas .marca span i {
@@ -234,7 +235,7 @@
 .universo_saraiva .marcas .box__marcas .marcas ul {
     padding: 0;
     margin: 0;
-    column-count: 2;
+    column-count: 1;
     list-style-type: disc;
     min-width: 100%;
 }
@@ -284,7 +285,6 @@
 }
 
 .universo_saraiva .listas ul:empty {
-    width: 35px;
     border-top: 5px solid rgba(0, 0, 0, .2);
 }
 
@@ -313,16 +313,12 @@
 
 .universo_saraiva .listas .lista {
     margin: 0px 10px;
-    max-width: 190px;
     display: flex;
     flex-direction: column-reverse;
 }
 
 .universo_saraiva .links {
-    column-count: 1;
-    column-gap: 13px;
-    width: 100%;
-    margin: 0 auto 50px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -395,19 +391,21 @@
     font-weight: inherit;
 }
 
-
 /* MASONRY */
-.universo_saraiva .grid{
+
+.universo_saraiva .grid {
     overflow: hidden;
 }
+
 .universo_saraiva .grid-item {
     margin-bottom: 3%;
 }
 
-.universo_saraiva .grid-sizer,.universo_saraiva .grid-item {
+.universo_saraiva .grid-sizer, .universo_saraiva .grid-item {
     width: 98%;
 }
-.universo_saraiva .gutter-sizer{
+
+.universo_saraiva .gutter-sizer {
     width: 2%;
 }
 
@@ -465,17 +463,18 @@
     flex-direction: column-reverse;
 }
 
-
-
 @media only screen and (min-width: 576px) {
     .universo_saraiva .marcas .box__marcas .marcas ul {
-        column-count: 3;
+        column-count: 2;
     }
-    .universo_saraiva .grid-sizer,.universo_saraiva .grid-item {
+    .universo_saraiva .grid-sizer, .universo_saraiva .grid-item {
         width: 45%;
     }
-    .universo_saraiva .gutter-sizer{
+    .universo_saraiva .gutter-sizer {
         width: 5%;
+    }
+    .universo_saraiva .marcas .box__marcas .marca span {
+        margin-top: -22px;
     }
 }
 
@@ -483,10 +482,13 @@
     .universo_saraiva .links {
         column-count: 4;
     }
-    .universo_saraiva .grid-sizer,.universo_saraiva .grid-item {
-        width: 28%;
+    .universo_saraiva .marcas .box__marcas .marcas ul {
+        column-count: 3;
     }
-    .universo_saraiva .gutter-sizer{
-        width: 5%;
+    .universo_saraiva .grid-sizer, .universo_saraiva .grid-item {
+        width: 24%;
+    }
+    .universo_saraiva .gutter-sizer {
+        width: 1%;
     }
 }

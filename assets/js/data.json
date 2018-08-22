@@ -1,6 +1,6 @@
 {
     "section": {
-        "botoes": {
+        "categorias": {
             "config": {
                 "color": "white",
                 "tipo": "botoes",
@@ -13,126 +13,54 @@
                     "href": "https://www.saraiva.com.br/livros"
                 },
                 {
-                    "nome": "Audiolivros",
-                    "href": "http://saraiva.ubook.com/"
-                },
-                {
-                    "nome": "Conectividade",
-                    "href": "https://www.saraiva.com.br/aventura-e-lazer "
-                },
-                {
                     "nome": "E-books / LEV",
                     "href": "https://www.saraiva.com.br/ebooks"
-                },
-                {
-                    "nome": "Filmes e Séries",
-                    "href": "https://www.saraiva.com.br/filmes"
-                },
-                {
-                    "nome": "Consoles e Games",
-                    "href": "https://www.saraiva.com.br/games "
                 },
                 {
                     "nome": "Informática",
                     "href": "https://www.saraiva.com.br/informatica"
                 },
                 {
-                    "nome": "Livros em outros idiomas",
-                    "href": "https://www.saraiva.com.br/livros/ingles-outros-idiomas"
-                },
-                {
-                    "nome": "Música",
-                    "href": "https://www.saraiva.com.br/musicas"
-                },
-                {
                     "nome": "Papelaria e Presentes",
                     "href": "https://www.saraiva.com.br/papelaria"
+                },
+                {
+                    "nome": "Audiolivros",
+                    "href": "http://saraiva.ubook.com/"
+                },
+                {
+                    "nome": "Filmes e Séries",
+                    "href": "https://www.saraiva.com.br/filmes"
+                },
+                {
+                    "nome": "Livros em outros idiomas",
+                    "href": "https://www.saraiva.com.br/livros/ingles-outros-idiomas"
                 },
                 {
                     "nome": "Revistas",
                     "href": "https://www.saraiva.com.br/revistas"
                 },
                 {
+                    "nome": "Conectividade",
+                    "href": "https://www.saraiva.com.br/aventura-e-lazer "
+                },
+                
+                {
+                    "nome": "Consoles e Games",
+                    "href": "https://www.saraiva.com.br/games "
+                },
+                {
+                    "nome": "Música",
+                    "href": "https://www.saraiva.com.br/musicas"
+                },
+                
+                {
                     "nome": "Celulares e Telefones",
                     "href": "https://www.saraiva.com.br/telefones-celulares "
-                }
-            ]
-        },
-        "outros": {
-            "config": {
-                "color": "grey",
-                "tipo": "botoes",
-                "position": "9",
-                "nome": "Outras"
-            },
-            "links": [
-                {
-                    "nome": "Assistência técnica Apple",
-                    "href": "https://www.saraiva.com.br/assistencia-tecnica"
-                },
-                {
-                    "nome": "Blog Saraiva",
-                    "href": "https://blog.saraiva.com.br/"
-                },
-                {
-                    "nome": "Cartão Saraiva",
-                    "href": "https://checkout.saraiva.com.br/cartao-saraiva"
-                },
-                {
-                    "nome": "Central de Atendimento ",
-                    "href": "https://www.saraiva.com.br/central-de-atendimento"
-                },
-                {
-                    "nome": "Eventos",
-                    "href": "https://blog.saraiva.com.br/eventos/"
-                },
-                {
-                    "nome": "Garantia Estendida",
-                    "href": "https://www.saraiva.com.br/garantia-estendida"
-                },
-                {
-                    "nome": "Instituto Jorge Saraiva  ",
-                    "href": "https://www.saraiva.com.br/institucional/instituto-saraiva"
-                },
-                {
-                    "nome": "Nossas Lojas",
-                    "href": "https://www.saraiva.com.br/nossas-lojas"
-                },
-                {
-                    "nome": "Outlet",
-                    "href": "https://www.saraiva.com.br/outlet"
-                },
-                {
-                    "nome": "Outlet de livros ",
-                    "href": "https://www.saraiva.com.br/outlet/livros"
-                },
-                {
-                    "nome": "Política Venda e Troca",
-                    "href": "https://www.saraiva.com.br/central-de-atendimento/politica"
-                },
-                {
-                    "nome": "Programa Afiliados",
-                    "href": "https://www.saraiva.com.br/institucional/programa-de-afiliados"
-                },
-                {
-                    "nome": "Proteção Saraiva ",
-                    "href": "https://www.saraiva.com.br/protecao-saraiva"
-                },
-                {
-                    "nome": "Relação com Investidores",
-                    "href": "http://www.saraivari.com.br/default_pt.asp?idioma=0&conta=28"
-                },
-                {
-                    "nome": "Saraiva Plus",
-                    "href": "https://www.saraiva.com.br/saraivaplus"
                 },
                 {
                     "nome": "Shopping Saraiva",
                     "href": "https://www.saraiva.com.br/shopping-saraiva"
-                },
-                {
-                    "nome": "Vale Cultura",
-                    "href": "https://www.saraiva.com.br/vale-cultura"
                 }
             ]
         },
@@ -256,170 +184,111 @@
         },
         "editoras": {
             "config": {
-                "tipo": "listas",
+                "tipo": "botoes",
                 "color": "grey",
                 "position": "2",
                 "nome": "Editoras"
             },
-            "letras": {
-                "a": [],
-                "b": [],
-                "c": [
-                    {
-                        "nome": "Cia das Letras",
-                        "href": "https://www.saraiva.com.br/livros/editoras/companhia-das-letras"
-                    },
-                    {
-                        "nome": "Cia das Letrinhas",
-                        "href": "https://www.saraiva.com.br/livros/editoras/cia-das-letrinhas"
-                    }
-                ],
-                "d": [],
-                "e": [],
-                "f": [],
-                "g": [
-                    {
-                        "nome": "Grupo A Educacional",
-                        "href": "https://www.saraiva.com.br/livros/editoras/grupo-a"
-                    },
-                    {
-                        "nome": "Grupo Editorial Record",
-                        "href": "https://www.saraiva.com.br/livros/editoras/record"
-                    }
-                ],
-                "h": [
-                    {
-                        "nome": "Harper Collins",
-                        "href": "https://www.saraiva.com.br/livros/editoras/harper-collins"
-                    }
-                ],
-                "i": [
-                    {
-                        "nome": "Intrínseca",
-                        "href": "https://www.saraiva.com.br/livros/editoras/intrinseca"
-                    }
-                ],
-                "j": [],
-                "l": [],
-                "m": [],
-                "n": [],
-                "o": [],
-                "p": [],
-                "q": [],
-                "r": [
-                    {
-                        "nome": "Record",
-                        "href": "https://www.saraiva.com.br/livros/editoras/record"
-                    },
-                    {
-                        "nome": "Rocco",
-                        "href": "https://www.saraiva.com.br/livros/editoras/rocco"
-                    }
-                ],
-                "s": [
-                    {
-                        "nome": "Saraiva",
-                        "href": "https://www.saraiva.com.br/livros/editoras/saraiva"
-                    },
-                    {
-                        "nome": "Sextante",
-                        "href": "https://www.saraiva.com.br/livros/editoras/sextante"
-                    }
-                ],
-                "t": [],
-                "u": [],
-                "v": [],
-                "x": [],
-                "z": []
-            }
+            "links": [
+                {
+                    "nome": "Cia das Letras",
+                    "href": "https://www.saraiva.com.br/livros/editoras/companhia-das-letras"
+                },
+                {
+                    "nome": "Cia das Letrinhas",
+                    "href": "https://www.saraiva.com.br/livros/editoras/cia-das-letrinhas"
+                },
+                {
+                    "nome": "Grupo A Educacional",
+                    "href": "https://www.saraiva.com.br/livros/editoras/grupo-a"
+                },
+                {
+                    "nome": "Grupo Editorial Record",
+                    "href": "https://www.saraiva.com.br/livros/editoras/record"
+                },
+                {
+                    "nome": "Harper Collins",
+                    "href": "https://www.saraiva.com.br/livros/editoras/harper-collins"
+                },
+                {
+                    "nome": "Intrínseca",
+                    "href": "https://www.saraiva.com.br/livros/editoras/intrinseca"
+                },
+                {
+                    "nome": "Record",
+                    "href": "https://www.saraiva.com.br/livros/editoras/record"
+                },
+                {
+                    "nome": "Rocco",
+                    "href": "https://www.saraiva.com.br/livros/editoras/rocco"
+                },
+                {
+                    "nome": "Saraiva",
+                    "href": "https://www.saraiva.com.br/livros/editoras/saraiva"
+                },
+                {
+                    "nome": "Sextante",
+                    "href": "https://www.saraiva.com.br/livros/editoras/sextante"
+                }
+            ]
         },
         "influenciadores": {
             "config": {
-                "tipo": "listas",
+                "tipo": "botoes",
                 "color": "grey",
                 "position": "4",
                 "nome": "Influenciadores"
             },
-            "letras": {
-                "a": [
-                    {
-                        "nome": "Aione Simões",
-                        "href": "https: //www.saraiva.com.br/influenciadores-indicam/aione-simoes"
-                    }
-                ],
-                "b": [
-                    {
-                        "nome": "Barbara Sá",
-                        "href": "https: //www.saraiva.com.br/influenciadores-indicam/barbara-sa"
-                    }
-                ],
-                "c": [
-                    {
-                        "nome": "Carina Rissi",
-                        "href": "https: //www.saraiva.com.br/influenciadores-indicam/carina-rissi"
-                    },
-                    {
-                        "nome": "Carol e Mikannn",
-                        "href": "https: //www.saraiva.com.br/influenciadores-indicam/carol-e-mikannn"
-                    },
-                    {
-                        "nome": "Charles Duhigg",
-                        "href": "https: //www.saraiva.com.br/influenciadores-indicam/Charles-Duhigg"
-                    }
-                ],
-                "d": [],
-                "e": [],
-                "f": [],
-                "g": [],
-                "h": [],
-                "i": [],
-                "j": [],
-                "l": [],
-                "m": [
-                    {
-                        "nome": "Maidy",
-                        "href": "https: //www.saraiva.com.br/influenciadores-indicam/maidy"
-                    },
-                    {
-                        "nome": "Márcio Fernandes",
-                        "href": "https: //www.saraiva.com.br/influenciadores-indicam/marcio-fernandes"
-                    },
-                    {
-                        "nome": "Mell Ferraz",
-                        "href": "https: //www.saraiva.com.br/influenciadores-indicam/mell-ferraz"
-                    }
-                ],
-                "n": [
-                    {
-                        "nome": "Novo Nerd",
-                        "href": "https: //www.saraiva.com.br/influenciadores-indicam/novo-nerd"
-                    }
-                ],
-                "o": [],
-                "p": [],
-                "q": [],
-                "r": [],
-                "s": [],
-                "t": [
-                    {
-                        "nome": "Tamirez Santos",
-                        "href": "https: //www.saraiva.com.br/influenciadores-indicam/tamirez-santos"
-                    },
-                    {
-                        "nome": "Tite",
-                        "href": "https: //www.saraiva.com.br/influenciadores-indicam/tite"
-                    }
-                ],
-                "u": [],
-                "v": [
-                    {
-                        "nome": "Vanuza",
-                        "href": "https: //www.saraiva.com.br/influenciadores-indicam/vanuza "
-                    }
-                ],
-                "x": [],
-                "z": []
-            }
+            "links": [
+                {
+                    "nome": "Aione Simões",
+                    "href": "https: //www.saraiva.com.br/influenciadores-indicam/aione-simoes"
+                },
+                {
+                    "nome": "Barbara Sá",
+                    "href": "https: //www.saraiva.com.br/influenciadores-indicam/barbara-sa"
+                },
+                {
+                    "nome": "Carina Rissi",
+                    "href": "https: //www.saraiva.com.br/influenciadores-indicam/carina-rissi"
+                },
+                {
+                    "nome": "Carol e Mikannn",
+                    "href": "https: //www.saraiva.com.br/influenciadores-indicam/carol-e-mikannn"
+                },
+                {
+                    "nome": "Charles Duhigg",
+                    "href": "https: //www.saraiva.com.br/influenciadores-indicam/Charles-Duhigg"
+                },
+                {
+                    "nome": "Maidy",
+                    "href": "https: //www.saraiva.com.br/influenciadores-indicam/maidy"
+                },
+                {
+                    "nome": "Márcio Fernandes",
+                    "href": "https: //www.saraiva.com.br/influenciadores-indicam/marcio-fernandes"
+                },
+                {
+                    "nome": "Mell Ferraz",
+                    "href": "https: //www.saraiva.com.br/influenciadores-indicam/mell-ferraz"
+                },
+                {
+                    "nome": "Novo Nerd",
+                    "href": "https: //www.saraiva.com.br/influenciadores-indicam/novo-nerd"
+                },
+                {
+                    "nome": "Tamirez Santos",
+                    "href": "https: //www.saraiva.com.br/influenciadores-indicam/tamirez-santos"
+                },
+                {
+                    "nome": "Tite",
+                    "href": "https: //www.saraiva.com.br/influenciadores-indicam/tite"
+                },
+                {
+                    "nome": "Vanuza",
+                    "href": "https: //www.saraiva.com.br/influenciadores-indicam/vanuza "
+                }
+            ]
         },
         "autores": {
             "config": {
@@ -1387,453 +1256,6 @@
                 "z": []
             }
         },
-        "livros-masonry": {
-            "config": {
-                "tipo": "masonry",
-                "color": "white",
-                "position": "6",
-                "nome": "Livros"
-            },
-            "letras": {
-                "#": [
-                    {
-                        "nome": "11 de Setembro - Memória e Literatura",
-                        "href": "https://www.saraiva.com.br/listas-livros/11-de-setembro"
-                    }
-                ],
-                "a": [
-                    {
-                        "nome": "Agatha Christie, Rainha do Crime",
-                        "href": "https://www.saraiva.com.br/listas-livros/agatha-christie"
-                    },
-                    {
-                        "nome": "Ao Mestre, Com Carinho",
-                        "href": "https://www.saraiva.com.br/listas-livros/especial-professores"
-                    },
-                    {
-                        "nome": "Autores Indicam",
-                        "href": "https://www.saraiva.com.br/listas-livros/autores-indicam"
-                    }
-                ],
-                "b": [
-                    {
-                        "nome": "Bíbia, O Livro Sagrado",
-                        "href": "https://www.saraiva.com.br/listas-livros/biblias"
-                    },
-                    {
-                        "nome": "Bitcoins - Entenda de uma Vez por Todas",
-                        "href": "https://www.saraiva.com.br/listas-livros/bitcoins"
-                    }
-                ],
-                "c": [
-                    {
-                        "nome": "Clarice Lispector",
-                        "href": "https://www.saraiva.com.br/listas-livros/clarice-lispector"
-                    },
-                    {
-                        "nome": "Clássicos da Literatura Americana",
-                        "href": "https://www.saraiva.com.br/listas-livros/literatura-americana"
-                    },
-                    {
-                        "nome": "Clássicos da Literatura Brasileira",
-                        "href": "https://www.saraiva.com.br/listas-livros/literatura-brasileira"
-                    },
-                    {
-                        "nome": "Clássicos da Literatura Francesa",
-                        "href": "https://www.saraiva.com.br/listas-livros/classicos-da-literatura-francesa"
-                    },
-                    {
-                        "nome": "Clássicos da Literatura Hispanoamericana",
-                        "href": "https://www.saraiva.com.br/listas-livros/literatura-hispanoamericano"
-                    },
-                    {
-                        "nome": "Clássicos da Literatura Inglesa",
-                        "href": "https://www.saraiva.com.br/listas-livros/literatura-inglesa"
-                    },
-                    {
-                        "nome": "Clássicos da Literatura Japonesa",
-                        "href": "https://www.saraiva.com.br/listas-livros/literatura-japonesa"
-                    },
-                    {
-                        "nome": "Clube de Vinhos",
-                        "href": "https://www.saraiva.com.br/listas-livros/clube-de-vinhos"
-                    },
-                    {
-                        "nome": "Como Sobreviver a um Apocalipse Zumbi",
-                        "href": "https://www.saraiva.com.br/listas-livros/zumbi"
-                    },
-                    {
-                        "nome": "Curtinhos - Livros para Ler em Um Dia",
-                        "href": "https://www.saraiva.com.br/listas-livros/curtinhos"
-                    }
-                ],
-                "d": [
-                    {
-                        "nome": "Das Páginas para as Telas",
-                        "href": "https://www.saraiva.com.br/listas-livros/das-paginas-para-as-telas"
-                    },
-                    {
-                        "nome": "DC Comics",
-                        "href": "https://www.saraiva.com.br/listas-livros/dc-comics"
-                    },
-                    {
-                        "nome": "Dê um Up na sua Carreira",
-                        "href": "https://www.saraiva.com.br/listas-livros/up-na-sua-carreira"
-                    },
-                    {
-                        "nome": "Destaques do Ano Saraiva",
-                        "href": "https://www.saraiva.com.br/destaques-do-ano"
-                    },
-                    {
-                        "nome": "Destinados a Matar - Por Dentro da Mente de um Assassino",
-                        "href": "https://www.saraiva.com.br/lista-livros/destinados-a-matar"
-                    },
-                    {
-                        "nome": "Deuses & Mitologias",
-                        "href": "https://www.saraiva.com.br/listas-livros/deuses-mitologias"
-                    },
-                    {
-                        "nome": "Diários de Guerra - Livros Sobre as Maiores Batalhas da História",
-                        "href": "https://www.saraiva.com.br/listas-livros/diarios-de-guerra"
-                    },
-                    {
-                        "nome": "Dog Lovers - Livros para Quem Ama Cachorros",
-                        "href": "https://www.saraiva.com.br/listas-livros/dog-lovers"
-                    },
-                    {
-                        "nome": "Donas da Ficção - Grandes Personagens Mulheres",
-                        "href": "https://www.saraiva.com.br/listas-livros/donas-da-ficcao"
-                    }
-                ],
-                "e": [
-                    {
-                        "nome": "É Carnaval - Tudo o que um Folião Deve Saber",
-                        "href": "https://www.saraiva.com.br/listas-livros/carnaval"
-                    },
-                    {
-                        "nome": "Empreendedorismo",
-                        "href": "https://www.saraiva.com.br/listas-livros/empreendedorismo"
-                    },
-                    {
-                        "nome": "Epic Reads",
-                        "href": "https://www.saraiva.com.br/listas-livros/epics-reads"
-                    },
-                    {
-                        "nome": "Espaço Gourmet Brasilidades",
-                        "href": "https://www.saraiva.com.br/listas-livros/receitas-culinarias-brasileira"
-                    },
-                    {
-                        "nome": "Espaço Gourmet Delícias Veganas",
-                        "href": "https://www.saraiva.com.br/listas-livros/delicias-veganas"
-                    },
-                    {
-                        "nome": "Especial Neil Gaiman",
-                        "href": "https://www.saraiva.com.br/listas-livros/especial-neil-gaiman"
-                    }
-                ],
-                "f": [
-                    {
-                        "nome": "Faça Acontecer - Histórias de Esportistas para Inspiração",
-                        "href": "https://www.saraiva.com.br/listas-livros/faca-acontecer"
-                    },
-                    {
-                        "nome": "Faça Você Mesmo",
-                        "href": "https://www.saraiva.com.br/listas-livros/faca-voce-mesmo"
-                    },
-                    {
-                        "nome": "Famosos Recomendam",
-                        "href": "https://www.saraiva.com.br/listas-livros/famosos-recomendam"
-                    },
-                    {
-                        "nome": "Favoritos 2017 do Obama",
-                        "href": "https://www.saraiva.com.br/listas-livros/favoritos-do-obama"
-                    },
-                    {
-                        "nome": "Feminismo",
-                        "href": "https://www.saraiva.com.br/listas-livros/feminismo"
-                    }
-                ],
-                "g": [
-                    {
-                        "nome": "Grandes Nomes na História",
-                        "href": "https://www.saraiva.com.br/listas-livros/grandes-nomes-na-historia"
-                    },
-                    {
-                        "nome": "Grandes Reportagens",
-                        "href": "https://www.saraiva.com.br/listas-livros/grandes-reportagens"
-                    },
-                    {
-                        "nome": "Grandes Sagas",
-                        "href": "https://www.saraiva.com.br/listas-livros/grandes-sagas"
-                    },
-                    {
-                        "nome": "Guia do Investidor",
-                        "href": "https://www.saraiva.com.br/listas-livros/guia-do-investidor"
-                    }
-                ],
-                "h": [
-                    {
-                        "nome": "História do Brasil",
-                        "href": "https://www.saraiva.com.br/listas-livros/historia-do-brasil"
-                    }
-                ],
-                "i": [
-                    {
-                        "nome": "Infidelidade - As Maiores Traições da Literatura",
-                        "href": "https://www.saraiva.com.br/listas-livros/infidelidade"
-                    }
-                ],
-                "j": [],
-                "k": [
-                    {
-                        "nome": "Kama Sutra",
-                        "href": "https://www.saraiva.com.br/listas-livros/kama-sutra"
-                    }
-                ],
-                "l": [
-                    {
-                        "nome": "Leitura Essencial para Todo Estudante (Volta às aulas)",
-                        "href": "https://www.saraiva.com.br/listas-livros/livros-essenciais"
-                    },
-                    {
-                        "nome": "LGBT",
-                        "href": "https://www.saraiva.com.br/listas-livros/orgulho-lgbt"
-                    },
-                    {
-                        "nome": "Literatura & Games",
-                        "href": "https://www.saraiva.com.br/listas-livros/literatura-games"
-                    },
-                    {
-                        "nome": "Literatura e Tribunais",
-                        "href": "https://www.saraiva.com.br/listas-livros/literatura-tribunais"
-                    },
-                    {
-                        "nome": "Literatura Russa",
-                        "href": "https://www.saraiva.com.br/listas-livros/literatura-russa"
-                    },
-                    {
-                        "nome": "Livros de Bolso",
-                        "href": "https://www.saraiva.com.br/listas-livros/livros-de-bolso"
-                    },
-                    {
-                        "nome": "Livros de Rock",
-                        "href": "https://www.saraiva.com.br/listas-livros/feitos-de-rock"
-                    },
-                    {
-                        "nome": "Livros Infantis que Todo Adulto Deveria Ler",
-                        "href": "https://www.saraiva.com.br/listas-livros/livros-infantis-para-adultos"
-                    },
-                    {
-                        "nome": "Livros para Ler nas Férias (Maratona de Férias)",
-                        "href": "https://www.saraiva.com.br/listas-livros/ferias-com-leitura"
-                    },
-                    {
-                        "nome": "Livros Premiados",
-                        "href": "https://www.saraiva.com.br/listas-livros/livros-premiados"
-                    },
-                    {
-                        "nome": "Livros que Inspiraram Séries de TV",
-                        "href": "https://www.saraiva.com.br/listas-livros/livros-de-series-tv"
-                    },
-                    {
-                        "nome": "Livros que Viraram Filmes em 2017",
-                        "href": "https://www.saraiva.com.br/listas-livros/adaptacoes-literarias-2017"
-                    },
-                    {
-                        "nome": "Livros Sobre Jogos de Raciocínio",
-                        "href": "https://www.saraiva.com.br/listas-livros/jogos-de-raciocinio"
-                    },
-                    {
-                        "nome": "Livroterapia - A Cura Através das Páginas",
-                        "href": "https://www.saraiva.com.br/listas-livros/livroterapia"
-                    },
-                    {
-                        "nome": "Loucos por Gatos",
-                        "href": "https://www.saraiva.com.br/listas-livros/loucos-por-gatos"
-                    }
-                ],
-                "m": [
-                    {
-                        "nome": "Mais Vendidos da Folha de SP",
-                        "href": "https://www.saraiva.com.br/listas-livros/mais-vendidos-folha"
-                    },
-                    {
-                        "nome": "Mais Vendidos da Veja",
-                        "href": "https://www.saraiva.com.br/listas-livros/mais-vendidos-veja"
-                    },
-                    {
-                        "nome": "Mais Vendidos do The New York Times",
-                        "href": "https://www.saraiva.com.br/listas-livros/mais-vendidos-new-york-times"
-                    },
-                    {
-                        "nome": "Mamães & Bebês",
-                        "href": "https://www.saraiva.com.br/listas-livros/mamaes-bebes"
-                    },
-                    {
-                        "nome": "Manual da Noiva - Livros para Ajudar e Inspirar a Data",
-                        "href": "https://www.saraiva.com.br/listas-livros/especial-noivas"
-                    },
-                    {
-                        "nome": "Manual da Transformação - Em Busca de Autoconhecimento",
-                        "href": "https://www.saraiva.com.br/listas-livros/manual-da-transformacao"
-                    },
-                    {
-                        "nome": "Marketing Digital",
-                        "href": "https://www.saraiva.com.br/listas-livros/marketing-digital"
-                    },
-                    {
-                        "nome": "Marvel Books",
-                        "href": "https://www.saraiva.com.br/listas-livros/marvel-books"
-                    },
-                    {
-                        "nome": "Mistério, Terror e Suspense",
-                        "href": "https://www.saraiva.com.br/listas-livros/misterio-terror-e-suspense"
-                    },
-                    {
-                        "nome": "Mulheres Incríveis - Grandes Mulheres da História",
-                        "href": "https://www.saraiva.com.br/listas-livros/mulheres-incriveis"
-                    }
-                ],
-                "n": [
-                    {
-                        "nome": "Natal Saraiva",
-                        "href": "https://www.saraiva.com.br/listas-livros/natal-saraiva"
-                    },
-                    {
-                        "nome": "Nova Literatura Brasileira",
-                        "href": "https://www.saraiva.com.br/listas-livros/nova-literatura-brasileira"
-                    }
-                ],
-                "o": [
-                    {
-                        "nome": "O Futebol, Paixão Nacional",
-                        "href": "https://www.saraiva.com.br/listas-livros/paixao-nacional"
-                    },
-                    {
-                        "nome": "O Melhor da Rússia",
-                        "href": "https://www.saraiva.com.br/listas-livros/o-melhor-da-russia"
-                    },
-                    {
-                        "nome": "O Melhor de Cada Década - Livros Mais Cativantes das Últimas Décadas",
-                        "href": "https://www.saraiva.com.br/listas-livros/os-melhores-da-decada"
-                    },
-                    {
-                        "nome": "O Universo - Grandes Descobertas dos Físicos",
-                        "href": "https://www.saraiva.com.br/listas-livros/o-universo"
-                    },
-                    {
-                        "nome": "Oscar 2018",
-                        "href": "https://www.saraiva.com.br/listas-livros/oscar-2018"
-                    }
-                ],
-                "p": [
-                    {
-                        "nome": "Páscoa",
-                        "href": "https://www.saraiva.com.br/listas-livros/especial-pascoa"
-                    },
-                    {
-                        "nome": "Poesia em Cores",
-                        "href": "https://www.saraiva.com.br/listas-livros/poesia-em-cores"
-                    },
-                    {
-                        "nome": "Política em Pauta",
-                        "href": "https://www.saraiva.com.br/listas-livros/politica-em-pauta"
-                    },
-                    {
-                        "nome": "Prepare-se para o Enem",
-                        "href": "https://www.saraiva.com.br/listas-livros/enem"
-                    },
-                    {
-                        "nome": "Programas Gastronômicos (Comidinhas na TV)",
-                        "href": "https://www.saraiva.com.br/listas-livros/comidinhas-na-tv"
-                    }
-                ],
-                "q": [
-                    {
-                        "nome": "Quem Conta um Conto",
-                        "href": "https://www.saraiva.com.br/listas-livros/contos"
-                    },
-                    {
-                        "nome": "Quer Aprender uma Nova Língua?",
-                        "href": "https://www.saraiva.com.br/listas-livros/aprenda-uma-nova-lingua"
-                    }
-                ],
-                "r": [
-                    {
-                        "nome": "Resoluções de Ano Novo",
-                        "href": "https://www.saraiva.com.br/listas-livros/resolucoes-de-ano-novo"
-                    },
-                    {
-                        "nome": "Romances Eróticos",
-                        "href": "https://www.saraiva.com.br/listas-livros/eroticos"
-                    },
-                    {
-                        "nome": "Romances para Sonhar",
-                        "href": "https://www.saraiva.com.br/listas-livros/romances-para-sonhar"
-                    }
-                ],
-                "s": [
-                    {
-                        "nome": "Seja Fitness",
-                        "href": "https://www.saraiva.com.br/listas-livros/seja-fitness"
-                    },
-                    {
-                        "nome": "Síria - Tudo Sobre a Guerra",
-                        "href": "https://www.saraiva.com.br/listas-livros/siria"
-                    },
-                    {
-                        "nome": "Sistema Prisional Brasileiro - Relatos Sobre as Penitenciárias ",
-                        "href": "https://www.saraiva.com.br/listas-livros/sistema-prisional-brasileiro"
-                    },
-                    {
-                        "nome": "Space Opera",
-                        "href": "https://www.saraiva.com.br/listas-livros/space-opera"
-                    },
-                    {
-                        "nome": "Star Wars",
-                        "href": "https://www.saraiva.com.br/listas-livros/star-wars"
-                    },
-                    {
-                        "nome": "Stephen King",
-                        "href": "https://www.saraiva.com.br/listas-livros/stephen-king"
-                    }
-                ],
-                "t": [
-                    {
-                        "nome": "The New Vanguard",
-                        "href": "https://www.saraiva.com.br/listas-livros/the-new-vanguard"
-                    }
-                ],
-                "u": [
-                    {
-                        "nome": "Um Beijo Vale Mais que Mil Palavras - Grandes Beijos da Literatura",
-                        "href": "https://www.saraiva.com.br/lista-livros/beijos-literarios"
-                    },
-                    {
-                        "nome": "Um Pouco de Amor - Romances Clássicos",
-                        "href": "https://www.saraiva.com.br/listas-livros/um-pouco-de-amor"
-                    }
-                ],
-                "v": [
-                    {
-                        "nome": "Vestibular é na Saraiva",
-                        "href": "https://www.saraiva.com.br/listas-livros/vestibular"
-                    },
-                    {
-                        "nome": "Viagens no Tempo",
-                        "href": "https://www.saraiva.com.br/listas-livros/time-machine"
-                    }
-                ],
-                "y": [
-                    {
-                        "nome": "Youtubers",
-                        "href": "https://www.saraiva.com.br/listas-livros/youtubers-brasileiros"
-                    }
-                ],
-                "x": [],
-                "z": []
-            }
-        },
         "paginas_especiais": {
             "config": {
                 "tipo": "listas",
@@ -2199,11 +1621,6 @@
                             "href": "https://www.saraiva.com.br/apple",
                             "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/apple.jpg",
                             "titulo": "Apple"
-                        },
-                        {
-                            "href": "https://www.saraiva.com.br/lego",
-                            "img": "https://images.livrariasaraiva.com.br/estatico/2018/site/universo-saraiva/assets/img/lego.jpg",
-                            "titulo": "Lego"
                         },
                         {
                             "href": "https://www.saraiva.com.br/audio/fitness-esporte",
