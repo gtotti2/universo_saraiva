@@ -336,8 +336,8 @@
         "influenciadores": {
             "config": {
                 "tipo": "listas",
-                "color": "white",
-                "position": "3",
+                "color": "grey",
+                "position": "4",
                 "nome": "Influenciadores"
             },
             "letras": {
@@ -424,8 +424,8 @@
         "autores": {
             "config": {
                 "tipo": "listas",
-                "color": "grey",
-                "position": "5",
+                "color": "white",
+                "position": "3",
                 "nome": "Autores"
             },
             "letras": {
@@ -1839,7 +1839,7 @@
                 "tipo": "listas",
                 "color": "grey",
                 "position": "7",
-                "nome": "Todos os Mundos"
+                "nome": "Todas as Páginas"
             },
             "letras": {
                 "a": [
@@ -1937,11 +1937,11 @@
                     },
                     {
                         "nome": "Geek",
-                        "href": "https://www.saraiva.com.br/http://www.saraiva.com.br/universo-geek"
+                        "href": "http://www.saraiva.com.br/universo-geek"
                     },
                     {
                         "nome": "Geek",
-                        "href": "https://www.saraiva.com.br/http://www.saraiva.com.br/universo-geek"
+                        "href": "http://www.saraiva.com.br/universo-geek"
                     },
                     {
                         "nome": "God Of war",
@@ -1959,7 +1959,7 @@
                     },
                     {
                         "nome": "Hqs e Mangás",
-                        "href": "https://www.saraiva.com.br/http://www.saraiva.com.br/livros/hqs"
+                        "href": "http://www.saraiva.com.br/livros/hqs"
                     }
                 ],
                 "i": [
@@ -1972,7 +1972,7 @@
                 "k": [
                     {
                         "nome": "Kids",
-                        "href": "https://www.saraiva.com.br/http://www.saraiva.com.br/kids"
+                        "href": "http://www.saraiva.com.br/kids"
                     }
                 ],
                 "l": [
@@ -1988,7 +1988,7 @@
                     },
                     {
                         "nome": "Marvel",
-                        "href": "https://www.saraiva.com.br/http://www.saraiva.com.br/marvel"
+                        "href": "http://www.saraiva.com.br/marvel"
                     },
                     {
                         "nome": "Medicina",
@@ -2007,7 +2007,15 @@
                 "o": [
                     {
                         "nome": "OAB",
-                        "href": "https://www.saraiva.com.br/http://www.saraiva.com.br/prova-oab"
+                        "href": "http://www.saraiva.com.br/prova-oab"
+                    },
+                    {
+                        "nome": "Outlet",
+                        "href": "https://www.saraiva.com.br/outlet"
+                    },
+                    {
+                        "nome": "Outlet de livros ",
+                        "href": "https://www.saraiva.com.br/outlet/livros"
                     }
                 ],
                 "p": [
@@ -2017,7 +2025,7 @@
                     },
                     {
                         "nome": "Princesas",
-                        "href": "https://www.saraiva.com.br/http://www.saraiva.com.br/disney-princesa"
+                        "href": "http://www.saraiva.com.br/disney-princesa"
                     },
                     {
                         "nome": "Promoções",

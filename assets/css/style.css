@@ -374,6 +374,7 @@
     color: #636363;
     margin: 26px auto;
     display: block;
+    text-transform: uppercase;
 }
 
 .universo_saraiva .load-more:hover {

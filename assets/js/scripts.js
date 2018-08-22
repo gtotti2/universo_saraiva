@@ -35,17 +35,17 @@
             $this = $(this)
 
             var animateWindow = () => {
-                $("html, body").animate({ scrollTop: $this.prev('.grid').offset().top - 150 }, 500)
+                $("html, body").animate({ scrollTop: $this.prev('.grid').offset().top - 250 }, 500)
             }
 
             if (!$this.hasClass('see_more')) {
-                $this.text('VER MENOS').addClass('see_more').prev('.grid').animate({
+                $this.text('Ver menos').addClass('see_more').prev('.grid').animate({
                     maxHeight: $this.prev('.grid')[0].scrollHeight
                 }, 1500, function () {
                     animateWindow()
                 });
             } else {
-                $this.text('VER MAIS').removeClass('see_more').prev('.grid').animate({
+                $this.text('Ver mais').removeClass('see_more').prev('.grid').animate({
                     maxHeight: '150px'
                 }, 1500, function () {
                     animateWindow()
