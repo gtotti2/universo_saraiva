@@ -172,7 +172,7 @@
     background: #01b47d;
 }
 
-.section__topo .items a.button__pÃ¡ginas_especiais {
+.section__topo .items a.button__pÃƒÂ¡ginas_especiais {
     background: #976ebe;
 }
 
@@ -212,35 +212,35 @@
 }
 
 .section__marcas h2 {
-    border-bottom: 1px solid #1e6dfd;
+    border-bottom: 2px solid #1e6dfd;
 }
 
 .section__editoras h2 {
-    border-bottom: 1px solid #fd7927;
+    border-bottom: 2px solid #fd7927;
 }
 
 .section__autores h2 {
-    border-bottom: 1px solid #ff505a;
+    border-bottom: 2px solid #ff505a;
 }
 
 .section__influenciadores h2 {
-    border-bottom: 1px solid #fad200;
+    border-bottom: 2px solid #fad200;
 }
 
 .section__listas h2 {
-    border-bottom: 1px solid #01b47c;
+    border-bottom: 2px solid #01b47c;
 }
 
-.section__pÃ¡ginas_especiais h2 {
-    border-bottom: 1px solid #976ebd;
+.section__pÃƒÂ¡ginas_especiais h2 {
+    border-bottom: 2px solid #976ebd;
 }
 
 .section__lojas_parceiras h2 {
-    border-bottom: 1px solid #019ba3;
+    border-bottom: 2px solid #019ba3;
 }
 
 .section__categorias_e_departamentos h2 {
-    border-bottom: 1px solid #1a6fff;
+    border-bottom: 2px solid #1a6fff;
 }
 
 .section:nth-child(odd) {
@@ -268,7 +268,7 @@
 .letters a {
     text-transform: capitalize;
     border: 2px solid transparent;
-    padding:0 15pz;
+    padding:0 15px;
 }
 .categories a.active, .letters a.active {
     border: 2px solid currentColor;
