@@ -54,6 +54,7 @@
     max-width: 100%;
     display: block;
     text-decoration: none;
+    padding: 0 0 4px 0;
 }
 .section__link .titulo a:hover {
     font-weight: bold;
