@@ -44,7 +44,7 @@
 
 .section__link .titulo a {
     color: #24282b;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 400;
     line-height: 1.571;
     text-align: left;
@@ -250,11 +250,10 @@
 .categories, .letters {
     margin-bottom: 21px;
     padding-left: 18px;
-    font-size:1.4em
+    font-size:1em;
 }
 
 .categories a, .letters a {
-    font-size: .875em;
     text-decoration: none;
     color: #000;
     border: 2px solid transparent;
@@ -262,7 +261,6 @@
     transition: .3s padding;
     line-height: 30px;
     border-width: 0px;
-    
 }
 
 .letters a {
