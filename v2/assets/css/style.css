@@ -192,6 +192,11 @@
     margin-bottom: 30px;
 }
 
+.section__topo .assunto a >.col-auto{
+    padding: 5px;
+}
+
+
 .section__topo .assuntos .assunto a {
     color: #24282b;
     font-size: 1em;
@@ -208,6 +213,7 @@
 
 .section__topo .assuntos .assunto div>p {
     max-width: 60px;
+    text-align: left;
 }
 
 .section__topo .assuntos .assunto img {
