@@ -5,7 +5,7 @@
 }
 
 .section {
-    padding: 40px;
+    padding: 40px 0;
 }
 
 .section h2 {
@@ -33,7 +33,7 @@
     text-decoration: none;
     color: #000;
     border: 1px solid #eff3f6;
-    font-size: 1em;
+    font-size:  0.9em;
     text-transform: uppercase;
 }
 
@@ -44,7 +44,7 @@
 
 .section__link .titulo a {
     color: #24282b;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 400;
     line-height: 1.571;
     text-align: left;
@@ -135,7 +135,8 @@
     align-items: center;
     justify-content: center;
     top: 5px;
-    font-size: 1.1em;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 .section__topo .items .item a:before {
@@ -184,7 +185,9 @@
 .section__topo .items a.button__categorias_e_departamentos {
     background: #1d6dff;
 }
-
+.section__topo .items .item a:hover {
+   font-weight:bold;
+}
 .section__topo .assuntos .assunto {
     margin-bottom: 30px;
 }
