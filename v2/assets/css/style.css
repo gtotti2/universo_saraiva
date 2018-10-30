@@ -10,7 +10,7 @@
 
 .section h2 {
     width: 100%;
-    border-bottom: 1px solid #333;
+    border-bottom: 2px solid #333;
     margin: 0px 0px 20px;
     text-transform: capitalize;
     font-size: 1.7857142857142858em;
@@ -190,7 +190,7 @@
 
 .section__topo .assuntos .assunto a {
     color: #24282b;
-    font-size: 0.875em;
+    font-size: 1em;
     font-weight: 500;
     text-decoration: none;
     border-radius: 25px;
