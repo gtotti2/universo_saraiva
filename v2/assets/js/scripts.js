@@ -170,12 +170,18 @@
                 </div>
             </div>
         </section>`).insertAfter('.universo_saraiva > .header')
-        items = []
-        $.getJSON('https://spreadsheets.google.com/feeds/list/1vFOcYcAm3eSQc-B2aY2cQ9kqWtG4pnAXVjC87xwFCQE/ompyumj/public/values?alt=json',function(data){
-            data.feed.entry.forEach((element,index) => {
-                items[index] = element.gsx$cordacategoria
+
+        $.getJSON('https://spreadsheets.google.com/feeds/list/1vFOcYcAm3eSQc-B2aY2cQ9kqWtG4pnAXVjC87xwFCQE/ompyumj/public/values?alt=json', function (data) {
+            data.feed.entry.forEach((element, index) => {
+                items[index] = {
+                    "nome": element.gsx$seção.$t,
+                    "tema_cor": element.gsx$cordacategoria.$t
+                }
             });
+            var itemsVisiveis = items.filter(item => item.nome != "Topo")
+            itemsVisiveis.map((item) => $(`<div class="col-6 col col-lg-4 col-xl-3 item"><a href="#" style="background-color :${item.tema_cor};" data-content="${item.nome}" data-link="${item.nome.replace(/\s/g, '_').toLowerCase()}" class="button__${item.nome.replace(/\s/g, '_').toLowerCase()}"></a></div>`).appendTo('.section__topo .items'))
         })
+
 
         $.getJSON(secao.url, function (data) {
             data.feed.entry.forEach((element, index) => {
@@ -186,8 +192,7 @@
                 }
             })
 
-        
-            items.map((item) => $(`<div class="col-6 col col-lg-4 col-xl-3 item"><a href="#" style="background-color :#333;" data-content="${item.nome}" data-link="${item.href.replace(/\s/g, '_').toLowerCase()}" class="button__${item.href.replace(/\s/g, '_').toLowerCase()}"></a></div>`).appendTo('.section__topo .items'))
+
             assuntos.map((assunto) => $(`<div class="col-6 col col-lg-4 col-xl-3 assunto"><div class="row flex-row align-items-center"><a href="#" class="d-flex align-items-center flex-wrap justify-content-center flex-row"><div class="col-auto"><img class="img-fluid" src="${assunto.img}"/></div><div class="col-auto"><p>${assunto.nome}</p></div></a></div></div>`).appendTo('.section__topo .assuntos'))
             $('.section__topo .item a').click(function (e) {
                 e.preventDefault()
@@ -205,8 +210,8 @@
 
         $('.universo_saraiva').on('click', '[data-filter] a', function (e) {
             e.preventDefault()
-            console.log($(this).text() != "Todas" ? $(this).closest('section').find('.box__ver_mais').removeClass('d-flex') : $(this).closest('section').find('.box__ver_mais').addClass('d-flex'))
-            
+            $(this).text() != "Todas" ? $(this).closest('section').find('.box__ver_mais').removeClass('d-flex') : $(this).closest('section').find('.box__ver_mais').addClass('d-flex')
+
             $(this).addClass('active').css('color', $(this).data('color')).siblings().removeClass('active').css('color', 'initial').closest('[data-filter]').attr('data-filter-selected', $(this).text())
             var items = $(this).closest('.row').siblings('.items'),
                 tipoFilter = $(this).closest('[data-filter]').data('filter'),
@@ -265,7 +270,7 @@
                         "categorias": section.gsx$tipo.$t == "categorias" ? categoriasFiltradas : ''
                     }
                     secoes[index].nome != "Topo" ? buildSections(secoes[index], infoSection[index]) : buildTopo(secoes[index], infoSection[index])
-                    
+
                 })
 
             })
