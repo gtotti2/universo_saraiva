@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+body{
+    font-family: 'Work Sans',sans-serif;
+}
+section{
+    padding: 40px;
+}
+.titulo{
+    border-radius:3px;
+    padding: 15px;
+    background-color: #fff;
+    text-align: center;
+    border: 5px solid #eff3f6;
+}
+.content__marcas h2{
+    border-bottom: 1px solid  #1e6dfd;
+}
+
+.content__editoras h2{
+    border-bottom: 1px solid  #fd7927;
+}
+
+.content__autores h2{
+    border-bottom: 1px solid  #ff505a;
+}
+.content__influencers h2{
+    border-bottom: 1px solid #f9d002;
+}
+.content__lista-de-livros h2{
+    border-bottom: 1px solid #01b47c;
+}
+.content_paginas-especiais h2{
+    border-bottom: 1px solid #976ebd;
+}
+.content__lojas h2{
+    border-bottom: 1px solid #019ba3;
+}
+
+.content__categorias-departamentos h2{
+    border-bottom: 1px solid #1a6fff;
+}
+.content__marcas,.content__editoras,.content__influencers,.content_paginas-especiais,.content__categorias-departamentos{
+    background-color: #eff3f6;
+}
+.seletores{
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+.seletores a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+
+}
+.seletores-marca a:active,.seletores-marca a:focus{
+    border-radius: 25px;
+    border: 3px solid #1e6dfd;
+    text-decoration: none;
+    font-weight: bold;
+    color:#1e6dfd;
+}
+.seletores-autores{
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1em;
+}
+.seletores-autores a:active,.seletores-autores a:focus{
+    border-radius: 25px;
+    border: 3px solid #ff505a;
+    text-decoration: none;
+    font-weight: bold;
+    color:#ff505a;
+}
+.seletores-livros a:active,.seletores-livros a:focus{
+    border-radius: 25px;
+    border: 3px solid #01b47c;
+    text-decoration: none;
+    font-weight: bold;
+    color:#01b47c;
+}
+.seletores-livros{
+    width: 100%;
+    font-size: 1em;
+}
+.seletores-paginas a:active,.seletores-paginas a:focus{
+    border-radius: 25px;
+    border: 3px solid #976ebd;
+    text-decoration: none;
+    font-weight: bold;
+    color:#976ebd;
+}
+.seletores-parceiras a:active,.seletores-parceiras a:focus{
+    border-radius: 25px;
+    border: 3px solid #019ba3;
+    text-decoration: none;
+    font-weight: bold;
+    color:#019ba3;
+}
+.seletores-parceiras{
+    width: 100%;
+    justify-content:space-between;
+    font-size: 1em;
+}
+a.ver__mais{
+    margin: 0 auto;
+    padding: 10px 35px;
+    border-radius: 25px;
+    border: 1px solid #000;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    margin-top: 25px;
+}

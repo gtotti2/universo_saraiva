@@ -31,7 +31,6 @@
             $grid.layout()
             $($grid.element).css('max-height', '510px')
         }
-        console.log()
         loadMoreButton($($grid.element).next('a.load-more'))
 
     }

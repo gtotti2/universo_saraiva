@@ -1,238 +1,213 @@
 "letras": {
-                "a": 
-                [
-                ],
-                "b": 
-                [
-                ],
-                "c": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "d": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "e": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "f": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "g": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "h": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "i": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "j": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "l": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "m": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "n": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "o": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "p": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "q": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "r": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "s": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "t": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "u": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "v": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "x": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ],
-                "z": 
-                [
-                    {
-                        "nome": "Ps4",
-                        "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
-                    },
-                    {
-                        "nome": "Xbox",
-                        "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
-                    }
-                ]
+    "a": [],
+    "b": [],
+    "c": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "d": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "e": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "f": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "g": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "h": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "i": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "j": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "l": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "m": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "n": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "o": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "p": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "q": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "r": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "s": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "t": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "u": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "v": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "x": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ],
+    "z": [
+        {
+            "nome": "Ps4",
+            "href": "https://busca.saraiva.com.br/pages/games/playstation-4"
+        },
+        {
+            "nome": "Xbox",
+            "href": "https://busca.saraiva.com.br/pages/games/xbox-one "
+        }
+    ]
