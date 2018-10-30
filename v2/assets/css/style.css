@@ -208,7 +208,12 @@
 
 .section__topo .assuntos .assunto a:hover {
     transform: scale(1.1);
-    font-weight: bold;
+
+}
+
+.section__topo .assuntos .assunto a:hover p{
+    font-weight: 700;
+
 }
 
 .section__topo .assuntos .assunto div>p {
