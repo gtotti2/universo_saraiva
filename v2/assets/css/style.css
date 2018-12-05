@@ -1,3 +1,7 @@
+*, ::after, ::before {
+    box-sizing: inherit
+}
+
 .universo_saraiva {
     display: flex;
     flex-direction: column;
@@ -39,7 +43,7 @@
 
 .section__botao .titulo a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, .08);
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .section__link .titulo a {
@@ -55,21 +59,25 @@
     display: block;
     text-decoration: none;
 }
+
 .section__link .titulo a:hover {
     font-weight: bold;
 }
 
 .section:not(.section__topo) .items {
-    transition: .3s all;
+    transition: .1s;
     overflow: hidden;
     max-height: 255px;
 }
-.section .box__ver_mais{
+
+.section .box__ver_mais {
     display: none;
 }
-.section .box__ver_mais.d-flex{
+
+.section .box__ver_mais.d-flex {
     display: flex;
 }
+
 .section .box__ver_mais a {
     margin: 0 auto;
     width: 258px;
@@ -85,8 +93,9 @@
     margin-top: 25px;
     font-weight: bold;
 }
-.section .box__ver_mais  a.disabled:hover{
-   font-weight:bold;
+
+.section .box__ver_mais a.disabled:hover {
+    font-weight: bold;
 }
 
 .section .box__ver_mais a.disabled {
@@ -250,7 +259,7 @@
 .categories, .letters {
     margin-bottom: 21px;
     padding-left: 18px;
-    font-size:1.4em
+    font-size: 1.4em
 }
 
 .categories a, .letters a {
@@ -262,14 +271,14 @@
     transition: .3s padding;
     line-height: 30px;
     border-width: 0px;
-    
 }
 
 .letters a {
     text-transform: capitalize;
     border: 2px solid transparent;
-    padding:0 15pz;
+    padding: 0 15pz;
 }
+
 .categories a.active, .letters a.active {
     border: 2px solid currentColor;
     color: #1e6dfd;
@@ -338,5 +347,4 @@
     font-size: .9em;
 }
 
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}

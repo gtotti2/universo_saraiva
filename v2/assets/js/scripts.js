@@ -60,13 +60,20 @@
         var joined = $(infos.join(''))
         var wrapped = $($('<div class="items row"></div>')).append(joined).appendTo($(section).find('.container'))
 
-        if (data.length > 24) {
+        var createVerMais = () => {
             $('<div class="row box__ver_mais justify-content-center d-flex"><div class="col-auto"><a href="#">Ver mais</a></div></div>').insertAfter(wrapped);
-            $('.box__ver_mais a').click((e) => {
-                e.preventDefault();
-                $(e.target).addClass('disabled').closest('.container').find('.items').css('max-height', '100%')
-            })
         }
+
+        if (window.innerWidth < 768) {
+            if (data.length > 4) {
+                createVerMais()
+            }
+        } else {
+            if (data.length > 24) {
+                createVerMais()
+            }
+        }
+
 
 
     }
@@ -114,6 +121,7 @@
 
 
         }
+
         hasFilter > 0 ? builSelectObject($(secao)) : ''
     }
 
@@ -128,7 +136,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <h2 style="border-color: ${infoSecao.tema_cor};">${secao.nome.toLowerCase()}</h2>
+                                <h2 style="border-color: ${infoSecao.tema_cor};">${secao.nome}</h2>
                             </div>
                         </div>
                     </div>
@@ -140,12 +148,10 @@
 
             var classNameWithoutSpaces = info.feed.title.$t.replace(/\s/g, '_').toLowerCase()
             buildDivsInto($(`.universo_saraiva > .section__${classNameWithoutSpaces}`), info.feed.entry, infoSecao.categorias)
-            buildToolsSections($(`.universo_saraiva > .section__${classNameWithoutSpaces}`), index, infoSecao.categorias, infoSecao)
+            buildToolsSections($(`.universo_saraiva > .section__${classNameWithoutSpaces}`), index, infoSecao.categorias, infoSecao, classNameWithoutSpaces)
 
-        }).done(function (info) {
-
-            $(`.header__menu [data-nav="${window.location.search.split('?')[1]}"]`).trigger('click')
         })
+
 
     }
 
@@ -180,6 +186,7 @@
             });
             var itemsVisiveis = items.filter(item => item.nome != "Topo")
             itemsVisiveis.map((item) => $(`<div class="col-6 col col-lg-4 col-xl-3 item"><a href="#" style="background-color :${item.tema_cor};" data-content="${item.nome}" data-link="${item.nome.replace(/\s/g, '_').toLowerCase()}" class="button__${item.nome.replace(/\s/g, '_').toLowerCase()}"></a></div>`).appendTo('.section__topo .items'))
+
         })
 
 
@@ -191,14 +198,13 @@
                     "url": element.gsx$url.$t
                 }
             })
-
-
-            assuntos.map((assunto) => $(`<div class="col-6 col col-lg-4 col-xl-3 assunto"><div class="row flex-row align-items-center"><a href="#" class="d-flex align-items-center flex-wrap justify-content-center flex-row"><div class="col-auto"><img class="img-fluid" src="${assunto.img}"/></div><div class="col-auto"><p>${assunto.nome}</p></div></a></div></div>`).appendTo('.section__topo .assuntos'))
-            $('.section__topo .item a').click(function (e) {
+            assuntos.map((assunto) => $(`<div class="col-6 col col-lg-4 col-xl-3 assunto"><div class="row flex-row align-items-center"><a href="${assunto.url}" class="d-flex align-items-center flex-wrap justify-content-center flex-row"><div class="col-auto"><img class="img-fluid" src="${assunto.img}"/></div><div class="col-auto"><p>${assunto.nome}</p></div></a></div></div>`).appendTo('.section__topo .assuntos'))
+            $('body').on('click', '.section__topo .item a', function (e) {
                 e.preventDefault()
                 var data_url = $(this).data('link')
                 $(`.header__menu [data-nav="${data_url}"] a`).trigger('click')
             })
+
         })
 
 
@@ -207,6 +213,15 @@
 
     $(document).ready(function (e) {
 
+
+        $('body').on('click', '.box__ver_mais a', function (e) {
+            e.preventDefault();
+            if ($(e.target).hasClass('active')) {
+                $(e.target).removeClass('active').text('Ver mais').closest('.container').find('.items').css('max-height', '255px')
+            } else {
+                $(e.target).addClass('active').text('Ver menos').closest('.container').find('.items').css('max-height', '100%')
+            }
+        })
 
         $('.universo_saraiva').on('click', '[data-filter] a', function (e) {
             e.preventDefault()
@@ -276,7 +291,23 @@
             })
 
 
+
         })
+        i = 0;
+        function checkForChanges() {
+            i++
+            var hash = window.location.hash.split('#')[1]
+            if ($(`.section__${hash}`).length) {
+                $(`[data-link="${hash}"]`).delay(2000).trigger('click')
+            }
+            else {
+                if (i < 30) {
+                    setTimeout(checkForChanges, 3000);
+                }
+            }
+
+        }
+        checkForChanges()
 
     })
 
