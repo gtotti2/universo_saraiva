@@ -1,6 +1,6 @@
 *, ::after, ::before {
     box-sizing: inherit
-}h
+}
 .universo_saraiva {
     display: flex;
     flex-direction: column;
